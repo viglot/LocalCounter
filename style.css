@@ -13,5 +13,6 @@
     font-size: 32px;
     font-family: monospace;
     color: rgb(2, 161, 37);
+    border: solid 5px red;
 }
 
