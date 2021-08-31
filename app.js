@@ -1,9 +1,13 @@
-let nummer = localStorage.getItem('nummer')
+const containerElement = document.getElementById('container');
 
-if(nummer == null){
-    nummer = 1;
-};
+let count = parseInt(localStorage.getItem('count'));
 
-localStorage.setItem('nummer', parseInt(nummer)+ 1);
+if(isNaN(count)){
+    count = 0;
+}
 
-document.getElementById("nummer").innerHTML = "Du har besökt sidan " + nummer + " gånger"
+count++;
+ 
+containerElement.textContent = `Du har besökt denna sida ${count} gånger`;
+
+localStorage.setItem('count', count);
