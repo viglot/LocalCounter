@@ -5,7 +5,7 @@ let count = parseInt(localStorage.getItem('count'));
 
 
 if(isNaN(count)) {
-  count = 0;
+ 
 }
 
 count++;
